@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import ghibliReducer from './containers/GhibliPage/state';
+
+export const store = createStore(ghibliReducer);
 
 ReactDOM.render(
   <React.StrictMode>
